@@ -1,0 +1,4 @@
+.python-version
+*.pyc
+
+config/settings/settings.py
