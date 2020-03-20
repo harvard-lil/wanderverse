@@ -7,6 +7,7 @@
 click==7.1.1              # via pip-tools
 django==2.2.11            # via -r requirements.in
 pip-tools==4.5.1          # via -r requirements.in
+psycopg2==2.8.4           # via -r requirements.in
 pytz==2019.3              # via django
 six==1.14.0               # via pip-tools
 sqlparse==0.3.1           # via django

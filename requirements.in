@@ -1,3 +1,4 @@
 pip-tools
 
 django
+psycopg2
