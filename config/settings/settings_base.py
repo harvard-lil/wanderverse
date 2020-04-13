@@ -129,5 +129,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "../static"),
 ]
 
+AUTH_USER_MODEL = 'app.SiteUser'
+
+
 # slack
 SLACK_API_TOKEN = "xoxb-SLACK_API_TOKEN"

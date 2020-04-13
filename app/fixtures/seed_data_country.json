@@ -1,0 +1,2279 @@
+[
+  {
+    "model": "app.country",
+    "pk": 1,
+    "fields": {
+      "code": "AF",
+      "name": "Afghanistan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 2,
+    "fields": {
+      "code": "AX",
+      "name": "Åland Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 3,
+    "fields": {
+      "code": "AL",
+      "name": "Albania",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 4,
+    "fields": {
+      "code": "DZ",
+      "name": "Algeria",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 5,
+    "fields": {
+      "code": "AS",
+      "name": "American Samoa",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 6,
+    "fields": {
+      "code": "AD",
+      "name": "Andorra",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 7,
+    "fields": {
+      "code": "AO",
+      "name": "Angola",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 8,
+    "fields": {
+      "code": "AI",
+      "name": "Anguilla",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 9,
+    "fields": {
+      "code": "AG",
+      "name": "Antigua and Barbuda",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 10,
+    "fields": {
+      "code": "AR",
+      "name": "Argentina",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 11,
+    "fields": {
+      "code": "AM",
+      "name": "Armenia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 12,
+    "fields": {
+      "code": "AW",
+      "name": "Aruba",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 13,
+    "fields": {
+      "code": "AU",
+      "name": "Australia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 14,
+    "fields": {
+      "code": "AT",
+      "name": "Austria",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 15,
+    "fields": {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 16,
+    "fields": {
+      "code": "BS",
+      "name": "Bahamas",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 17,
+    "fields": {
+      "code": "BH",
+      "name": "Bahrain",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 18,
+    "fields": {
+      "code": "BD",
+      "name": "Bangladesh",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 19,
+    "fields": {
+      "code": "BB",
+      "name": "Barbados",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 20,
+    "fields": {
+      "code": "BY",
+      "name": "Belarus",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 21,
+    "fields": {
+      "code": "BE",
+      "name": "Belgium",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 22,
+    "fields": {
+      "code": "BZ",
+      "name": "Belize",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 23,
+    "fields": {
+      "code": "BJ",
+      "name": "Benin",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 24,
+    "fields": {
+      "code": "BM",
+      "name": "Bermuda",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 25,
+    "fields": {
+      "code": "BT",
+      "name": "Bhutan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 26,
+    "fields": {
+      "code": "BO",
+      "name": "Bolivia",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 27,
+    "fields": {
+      "code": "BQ",
+      "name": "Bonaire, Sint Eustatius and Saba",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 28,
+    "fields": {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 29,
+    "fields": {
+      "code": "BW",
+      "name": "Botswana",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 30,
+    "fields": {
+      "code": "BR",
+      "name": "Brazil",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 31,
+    "fields": {
+      "code": "AQ",
+      "name": "British Antarctic Territory",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 32,
+    "fields": {
+      "code": "IO",
+      "name": "British Indian Ocean Territory",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 33,
+    "fields": {
+      "code": "VG",
+      "name": "British Virgin Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 34,
+    "fields": {
+      "code": "BN",
+      "name": "Brunei",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 35,
+    "fields": {
+      "code": "BG",
+      "name": "Bulgaria",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 36,
+    "fields": {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 37,
+    "fields": {
+      "code": "BI",
+      "name": "Burundi",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 38,
+    "fields": {
+      "code": "KH",
+      "name": "Cambodia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 39,
+    "fields": {
+      "code": "CM",
+      "name": "Cameroon",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 40,
+    "fields": {
+      "code": "CA",
+      "name": "Canada",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 41,
+    "fields": {
+      "code": "CV",
+      "name": "Cape Verde",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 42,
+    "fields": {
+      "code": "KY",
+      "name": "Cayman Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 43,
+    "fields": {
+      "code": "CF",
+      "name": "Central African Republic",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 44,
+    "fields": {
+      "code": "TD",
+      "name": "Chad",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 45,
+    "fields": {
+      "code": "CL",
+      "name": "Chile",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 46,
+    "fields": {
+      "code": "CN",
+      "name": "China",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 47,
+    "fields": {
+      "code": "CX",
+      "name": "Christmas Island",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 48,
+    "fields": {
+      "code": "CC",
+      "name": "Cocos (Keeling) Island",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 49,
+    "fields": {
+      "code": "CO",
+      "name": "Colombia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 50,
+    "fields": {
+      "code": "KM",
+      "name": "Comoros",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 51,
+    "fields": {
+      "code": "CG",
+      "name": "Congo (Brazzaville)",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 52,
+    "fields": {
+      "code": "CD",
+      "name": "Congo, Democratic Republic",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 53,
+    "fields": {
+      "code": "CK",
+      "name": "Cook Islands",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 54,
+    "fields": {
+      "code": "CR",
+      "name": "Costa Rica",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 55,
+    "fields": {
+      "code": "CI",
+      "name": "Côte d'Ivoire (Ivory Coast)",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 56,
+    "fields": {
+      "code": "HR",
+      "name": "Croatia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 57,
+    "fields": {
+      "code": "CU",
+      "name": "Cuba",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 58,
+    "fields": {
+      "code": "CW",
+      "name": "Curaçao",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 59,
+    "fields": {
+      "code": "CY",
+      "name": "Cyprus",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 60,
+    "fields": {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 61,
+    "fields": {
+      "code": "DK",
+      "name": "Denmark",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 62,
+    "fields": {
+      "code": "DJ",
+      "name": "Djibouti",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 63,
+    "fields": {
+      "code": "DM",
+      "name": "Dominica",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 64,
+    "fields": {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 65,
+    "fields": {
+      "code": "TL",
+      "name": "East Timor",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 66,
+    "fields": {
+      "code": "EC",
+      "name": "Ecuador",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 67,
+    "fields": {
+      "code": "SV",
+      "name": "El Salvador",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 68,
+    "fields": {
+      "code": "EG",
+      "name": "Egypt",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 69,
+    "fields": {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 70,
+    "fields": {
+      "code": "ER",
+      "name": "Eritrea",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 71,
+    "fields": {
+      "code": "EE",
+      "name": "Estonia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 72,
+    "fields": {
+      "code": "ET",
+      "name": "Ethiopia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 73,
+    "fields": {
+      "code": "FK",
+      "name": "Falkland Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 74,
+    "fields": {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 75,
+    "fields": {
+      "code": "FJ",
+      "name": "Fiji",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 76,
+    "fields": {
+      "code": "FI",
+      "name": "Finland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 77,
+    "fields": {
+      "code": "FR",
+      "name": "France",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 78,
+    "fields": {
+      "code": "GF",
+      "name": "French Guiana",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 79,
+    "fields": {
+      "code": "PF",
+      "name": "French Polynesia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 80,
+    "fields": {
+      "code": "TF",
+      "name": "French Southern and Antarctic Territories",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 81,
+    "fields": {
+      "code": "GA",
+      "name": "Gabon",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 82,
+    "fields": {
+      "code": "GM",
+      "name": "Gambia",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 83,
+    "fields": {
+      "code": "GE",
+      "name": "Georgia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 84,
+    "fields": {
+      "code": "DE",
+      "name": "Germany",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 85,
+    "fields": {
+      "code": "DE",
+      "name": "Germany",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 86,
+    "fields": {
+      "code": "DE",
+      "name": "Germany",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 87,
+    "fields": {
+      "code": "GH",
+      "name": "Ghana",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 88,
+    "fields": {
+      "code": "GI",
+      "name": "Gibraltar",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 89,
+    "fields": {
+      "code": "GR",
+      "name": "Greece",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 90,
+    "fields": {
+      "code": "GL",
+      "name": "Greenland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 91,
+    "fields": {
+      "code": "GD",
+      "name": "Grenada",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 92,
+    "fields": {
+      "code": "GP",
+      "name": "Guadeloupe",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 93,
+    "fields": {
+      "code": "GU",
+      "name": "Guam",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 94,
+    "fields": {
+      "code": "GT",
+      "name": "Guatemala",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 95,
+    "fields": {
+      "code": "GG",
+      "name": "Guernsey",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 96,
+    "fields": {
+      "code": "GN",
+      "name": "Guinea",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 97,
+    "fields": {
+      "code": "GW",
+      "name": "Guinea Bissau",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 98,
+    "fields": {
+      "code": "GY",
+      "name": "Guyana",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 99,
+    "fields": {
+      "code": "HT",
+      "name": "Haiti",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 100,
+    "fields": {
+      "code": "HM",
+      "name": "Heard and McDonald Islands",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 101,
+    "fields": {
+      "code": "HN",
+      "name": "Honduras",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 102,
+    "fields": {
+      "code": "HK",
+      "name": "Hong Kong",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 103,
+    "fields": {
+      "code": "HU",
+      "name": "Hungary",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 104,
+    "fields": {
+      "code": "IS",
+      "name": "Iceland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 105,
+    "fields": {
+      "code": "IN",
+      "name": "India",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 106,
+    "fields": {
+      "code": "ID",
+      "name": "Indonesia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 107,
+    "fields": {
+      "code": "IR",
+      "name": "Iran",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 108,
+    "fields": {
+      "code": "IQ",
+      "name": "Iraq",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 109,
+    "fields": {
+      "code": "IE",
+      "name": "Ireland",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 110,
+    "fields": {
+      "code": "IM",
+      "name": "Isle of Man",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 111,
+    "fields": {
+      "code": "IL",
+      "name": "Israel",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 112,
+    "fields": {
+      "code": "IT",
+      "name": "Italy",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 113,
+    "fields": {
+      "code": "JM",
+      "name": "Jamaica",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 114,
+    "fields": {
+      "code": "JP",
+      "name": "Japan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 115,
+    "fields": {
+      "code": "JE",
+      "name": "Jersey",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 116,
+    "fields": {
+      "code": "JO",
+      "name": "Jordan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 117,
+    "fields": {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 118,
+    "fields": {
+      "code": "KE",
+      "name": "Kenya",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 119,
+    "fields": {
+      "code": "KI",
+      "name": "Kiribati",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 120,
+    "fields": {
+      "code": "KP",
+      "name": "Korea, North",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 121,
+    "fields": {
+      "code": "KR",
+      "name": "Korea, South",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 122,
+    "fields": {
+      "code": "XK",
+      "name": "Kosovo",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 123,
+    "fields": {
+      "code": "KW",
+      "name": "Kuwait",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 124,
+    "fields": {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 125,
+    "fields": {
+      "code": "LA",
+      "name": "Laos",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 126,
+    "fields": {
+      "code": "LV",
+      "name": "Latvia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 127,
+    "fields": {
+      "code": "LB",
+      "name": "Lebanon",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 128,
+    "fields": {
+      "code": "LS",
+      "name": "Lesotho",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 129,
+    "fields": {
+      "code": "LR",
+      "name": "Liberia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 131,
+    "fields": {
+      "code": "LY",
+      "name": "Libya",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 132,
+    "fields": {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 133,
+    "fields": {
+      "code": "LT",
+      "name": "Lithuania",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 134,
+    "fields": {
+      "code": "LU",
+      "name": "Luxembourg",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 135,
+    "fields": {
+      "code": "MO",
+      "name": "Macau",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 136,
+    "fields": {
+      "code": "MK",
+      "name": "Macedonia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 137,
+    "fields": {
+      "code": "MG",
+      "name": "Madagascar",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 138,
+    "fields": {
+      "code": "MW",
+      "name": "Malawi",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 139,
+    "fields": {
+      "code": "MY",
+      "name": "Malaysia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 140,
+    "fields": {
+      "code": "MV",
+      "name": "Maldives",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 141,
+    "fields": {
+      "code": "ML",
+      "name": "Mali",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 142,
+    "fields": {
+      "code": "MT",
+      "name": "Malta",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 143,
+    "fields": {
+      "code": "MH",
+      "name": "Marshall Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 144,
+    "fields": {
+      "code": "MR",
+      "name": "Mauritania",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 145,
+    "fields": {
+      "code": "MU",
+      "name": "Mauritius",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 146,
+    "fields": {
+      "code": "MQ",
+      "name": "Martinique",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 147,
+    "fields": {
+      "code": "YT",
+      "name": "Mayotte",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 148,
+    "fields": {
+      "code": "MX",
+      "name": "Mexico",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 149,
+    "fields": {
+      "code": "FM",
+      "name": "Micronesia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 150,
+    "fields": {
+      "code": "MD",
+      "name": "Moldova",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 151,
+    "fields": {
+      "code": "MC",
+      "name": "Monaco",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 152,
+    "fields": {
+      "code": "MN",
+      "name": "Mongolia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 153,
+    "fields": {
+      "code": "ME",
+      "name": "Montenegro",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 154,
+    "fields": {
+      "code": "MS",
+      "name": "Montserrat",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 155,
+    "fields": {
+      "code": "MA",
+      "name": "Morocco",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 156,
+    "fields": {
+      "code": "MZ",
+      "name": "Mozambique",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 157,
+    "fields": {
+      "code": "MM",
+      "name": "Myanmar",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 158,
+    "fields": {
+      "code": "NA",
+      "name": "Namibia",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 159,
+    "fields": {
+      "code": "NR",
+      "name": "Nauru",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 160,
+    "fields": {
+      "code": "NP",
+      "name": "Nepal",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 161,
+    "fields": {
+      "code": "NL",
+      "name": "Netherlands",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 162,
+    "fields": {
+      "code": "NC",
+      "name": "New Caledonia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 163,
+    "fields": {
+      "code": "NZ",
+      "name": "New Zealand",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 164,
+    "fields": {
+      "code": "NI",
+      "name": "Nicaragua",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 165,
+    "fields": {
+      "code": "NE",
+      "name": "Niger",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 166,
+    "fields": {
+      "code": "NG",
+      "name": "Nigeria",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 167,
+    "fields": {
+      "code": "NU",
+      "name": "Niue",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 168,
+    "fields": {
+      "code": "NF",
+      "name": "Norfolk Island",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 169,
+    "fields": {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 170,
+    "fields": {
+      "code": "NO",
+      "name": "Norway",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 171,
+    "fields": {
+      "code": "OM",
+      "name": "Oman",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 172,
+    "fields": {
+      "code": "PK",
+      "name": "Pakistan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 173,
+    "fields": {
+      "code": "PW",
+      "name": "Palau",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 174,
+    "fields": {
+      "code": "PS",
+      "name": "Palestine",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 175,
+    "fields": {
+      "code": "PA",
+      "name": "Panama",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 176,
+    "fields": {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 177,
+    "fields": {
+      "code": "PY",
+      "name": "Paraguay",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 178,
+    "fields": {
+      "code": "PE",
+      "name": "Peru",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 179,
+    "fields": {
+      "code": "PH",
+      "name": "Philippines",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 180,
+    "fields": {
+      "code": "PN",
+      "name": "Pitcairn Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 181,
+    "fields": {
+      "code": "PL",
+      "name": "Poland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 182,
+    "fields": {
+      "code": "PT",
+      "name": "Portugal",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 183,
+    "fields": {
+      "code": "PT",
+      "name": "Portugal",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 184,
+    "fields": {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 185,
+    "fields": {
+      "code": "QA",
+      "name": "Qatar",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 186,
+    "fields": {
+      "code": "RE",
+      "name": "Réunion",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 187,
+    "fields": {
+      "code": "RO",
+      "name": "Romania",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 188,
+    "fields": {
+      "code": "RW",
+      "name": "Rwanda",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 189,
+    "fields": {
+      "code": "RU",
+      "name": "Russia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 190,
+    "fields": {
+      "code": "BL",
+      "name": "Saint Barthélemy",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 191,
+    "fields": {
+      "code": "SH",
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 192,
+    "fields": {
+      "code": "KN",
+      "name": "Saint Kitts and Nevis",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 193,
+    "fields": {
+      "code": "LC",
+      "name": "Saint Lucia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 194,
+    "fields": {
+      "code": "MF",
+      "name": "Saint Martin",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 195,
+    "fields": {
+      "code": "PM",
+      "name": "Saint Pierre and Miquelon",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 196,
+    "fields": {
+      "code": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 197,
+    "fields": {
+      "code": "WS",
+      "name": "Samoa",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 198,
+    "fields": {
+      "code": "SM",
+      "name": "San Marino",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 199,
+    "fields": {
+      "code": "ST",
+      "name": "Sao Tome and Principe",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 200,
+    "fields": {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 201,
+    "fields": {
+      "code": "SN",
+      "name": "Senegal",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 202,
+    "fields": {
+      "code": "RS",
+      "name": "Serbia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 203,
+    "fields": {
+      "code": "SC",
+      "name": "Seychelles",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 204,
+    "fields": {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 205,
+    "fields": {
+      "code": "SX",
+      "name": "Sint Maarten",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 206,
+    "fields": {
+      "code": "SG",
+      "name": "Singapore",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 207,
+    "fields": {
+      "code": "SG",
+      "name": "Singapore",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 208,
+    "fields": {
+      "code": "SG",
+      "name": "Singapore",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 209,
+    "fields": {
+      "code": "SK",
+      "name": "Slovakia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 210,
+    "fields": {
+      "code": "SI",
+      "name": "Slovenia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 211,
+    "fields": {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 212,
+    "fields": {
+      "code": "SO",
+      "name": "Somalia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 213,
+    "fields": {
+      "code": "ZA",
+      "name": "South Africa",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 214,
+    "fields": {
+      "code": "SS",
+      "name": "South Sudan",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 215,
+    "fields": {
+      "code": "GS",
+      "name": "South Georgia and the South Sandwich Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 216,
+    "fields": {
+      "code": "ES",
+      "name": "Spain",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 217,
+    "fields": {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 218,
+    "fields": {
+      "code": "SD",
+      "name": "Sudan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 219,
+    "fields": {
+      "code": "SR",
+      "name": "Suriname",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 220,
+    "fields": {
+      "code": "SZ",
+      "name": "Swaziland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 221,
+    "fields": {
+      "code": "SE",
+      "name": "Sweden",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 222,
+    "fields": {
+      "code": "CH",
+      "name": "Switzerland",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 223,
+    "fields": {
+      "code": "SJ",
+      "name": "Svalbard and Jan Mayen",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 224,
+    "fields": {
+      "code": "SY",
+      "name": "Syria",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 225,
+    "fields": {
+      "code": "TW",
+      "name": "Taiwan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 226,
+    "fields": {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 227,
+    "fields": {
+      "code": "TZ",
+      "name": "Tanzania",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 228,
+    "fields": {
+      "code": "TH",
+      "name": "Thailand",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 229,
+    "fields": {
+      "code": "TG",
+      "name": "Togo",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 230,
+    "fields": {
+      "code": "TK",
+      "name": "Tokelau",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 231,
+    "fields": {
+      "code": "TO",
+      "name": "Tonga",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 232,
+    "fields": {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 233,
+    "fields": {
+      "code": "TN",
+      "name": "Tunisia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 234,
+    "fields": {
+      "code": "TR",
+      "name": "Turkey",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 235,
+    "fields": {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 236,
+    "fields": {
+      "code": "TC",
+      "name": "Turks and Caicos Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 237,
+    "fields": {
+      "code": "TV",
+      "name": "Tuvalu",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 238,
+    "fields": {
+      "code": "UG",
+      "name": "Uganda",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 239,
+    "fields": {
+      "code": "UA",
+      "name": "Ukraine",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 240,
+    "fields": {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 241,
+    "fields": {
+      "code": "GB",
+      "name": "United Kingdom",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 242,
+    "fields": {
+      "code": "US",
+      "name": "United States",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 243,
+    "fields": {
+      "code": "UM",
+      "name": "United States Minor Outlying Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 244,
+    "fields": {
+      "code": "UY",
+      "name": "Uruguay",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 245,
+    "fields": {
+      "code": "VI",
+      "name": "U.S. Virgin Islands",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 246,
+    "fields": {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 247,
+    "fields": {
+      "code": "VU",
+      "name": "Vanuatu",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 248,
+    "fields": {
+      "code": "VA",
+      "name": "Vatican",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 249,
+    "fields": {
+      "code": "VE",
+      "name": "Venezuela",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 250,
+    "fields": {
+      "code": "VN",
+      "name": "Vietnam",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 251,
+    "fields": {
+      "code": "WF",
+      "name": "Wallis and Futuna",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 252,
+    "fields": {
+      "code": "YE",
+      "name": "Yemen",
+      "has_postal_codes": false
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 253,
+    "fields": {
+      "code": "ZM",
+      "name": "Zambia",
+      "has_postal_codes": true
+    }
+  },
+  {
+    "model": "app.country",
+    "pk": 255,
+    "fields": {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "has_postal_codes": false
+    }
+  }
+]
