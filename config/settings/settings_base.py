@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
 
     'app',
+    'slackbot',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "../static"),
 ]
+
+# slack
+SLACK_API_TOKEN = "xoxb-SLACK_API_TOKEN"

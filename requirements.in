@@ -2,3 +2,7 @@ pip-tools
 
 django
 psycopg2
+
+
+# slack
+slackclient==2.5.0

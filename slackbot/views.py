@@ -1,6 +1,7 @@
 import os
 import json
 import glob
+import slack
 from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
@@ -8,13 +9,15 @@ from django.http import HttpResponse, JsonResponse
 
 from slackbot import helpers
 
+client = slack.WebClient(token=settings.SLACK_API_TOKEN)
+
 ALLOWED_COMMANDS = {
-    'list': 'List available commands `/wanderverse list`',
+    'list': 'list available commands `/wanderverse list`',
     'new': 'start new poem `/wanderverse new`',
     'add': 'add line to poem `/wanderverse add [your line here]`',
     'show': 'show last line of current poem `/wanderverse show`',
     'get instructions': 'get new instructions `/wanderverse get instructions`',
-    'unravel': 'show entire poem `/wanderverse new`'
+    'unravel': 'show entire poem `/wanderverse unravel`',
 }
 
 
@@ -22,13 +25,18 @@ ALLOWED_COMMANDS = {
 def event_hook(request):
     print("getting request >>", request)
 
+    response = {"type": "mrkdwn"}
     message = json.loads(request.body.decode())
     if message['event']['type'] == 'message':
-        print("getting message:", message['event']['text'], message['event']['user'])
-    response = {}
+        if "<@U011U9SS4RJ>" in message['event']['text']:
+            response = client.chat_postMessage(
+                channel=message['event']['channel'],
+                text="Hello world!\n I am a little bot that runs exquisite corpus poetry games.\n"
+                     "Type `/wanderverse list` to get a list of available commands.")
+            return HttpResponse("ok")
     if 'challenge' in message:
         response['challenge'] = message['challenge']
-    return JsonResponse(response)
+    return JsonResponse(response, safe=False)
 
 
 @csrf_exempt
@@ -51,7 +59,10 @@ def slash_command(request):
         if latest_file:
             with open(latest_file, "r") as f:
                 lines = f.readlines()
-            response["text"] = "*This is the last line:*\n\n" + lines[-1]
+            if len(lines):
+                response["text"] = "*This is the last line:*\n\n" + lines[-1]
+            else:
+                response["text"] = "This poem hasn't been started yet. Add a first line by writing `/wanderverse add [your line]`"
         else:
             response["text"] = "No poems to show. To start a new one, type `/wanderverse new`"
     elif command[0:3] == "add":
