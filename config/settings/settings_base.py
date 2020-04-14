@@ -133,4 +133,8 @@ AUTH_USER_MODEL = 'app.SiteUser'
 
 
 # slack
+SLACK_STORAGE = os.path.join(BASE_DIR, '../slackbot/storage')
 SLACK_API_TOKEN = "xoxb-SLACK_API_TOKEN"
+
+SLACK_CHANNEL = "#test-channel"
+SLACK_ANNOUNCE = False

@@ -12,12 +12,12 @@ from slackbot import helpers
 client = slack.WebClient(token=settings.SLACK_API_TOKEN)
 
 ALLOWED_COMMANDS = {
-    'list': 'list available commands `/wanderverse list`',
-    'new': 'start new poem `/wanderverse new`',
-    'add': 'add line to poem `/wanderverse add [your line here]`',
-    'show': 'show last line of current poem `/wanderverse show`',
-    'get instructions': 'get new instructions `/wanderverse get instructions`',
-    'unravel': 'show entire poem `/wanderverse unravel`',
+    '*list*': 'list available commands `/wanderverse list`',
+    '*new*': 'start new poem `/wanderverse new`',
+    '*add*': 'add line to poem `/wanderverse add [your line here]`',
+    '*show*': 'show last line of current poem `/wanderverse show`',
+    '*get instructions*': 'get new instructions `/wanderverse get instructions`',
+    '*unravel*': 'show entire poem `/wanderverse unravel`',
 }
 
 
@@ -27,7 +27,7 @@ def event_hook(request):
 
     response = {"type": "mrkdwn"}
     message = json.loads(request.body.decode())
-    if message['event']['type'] == 'message':
+    if 'event' in message and message['event']['type'] == 'message':
         if "<@U011U9SS4RJ>" in message['event']['text']:
             response = client.chat_postMessage(
                 channel=message['event']['channel'],
@@ -41,6 +41,7 @@ def event_hook(request):
 
 @csrf_exempt
 def slash_command(request):
+    print(request.POST)
     command = request.POST.get('text')
     response = {"type": "mrkdwn"}
     list_of_files = glob.glob(settings.SLACK_STORAGE + "/*.txt")
@@ -60,9 +61,13 @@ def slash_command(request):
             with open(latest_file, "r") as f:
                 lines = f.readlines()
             if len(lines):
-                response["text"] = "*This is the last line:*\n\n" + lines[-1]
+                response["text"] = "*This is the last line* (the rest will remain hidden until you unravel):\n\n\n"
+                response["text"] += "--------------------------\n\n"
+                response["text"] += lines[-1]
+                response["text"] += "\n\n--------------------------"
             else:
-                response["text"] = "This poem hasn't been started yet. Add a first line by writing `/wanderverse add [your line]`"
+                response[
+                    "text"] = "This poem hasn't been started yet. Add a first line by writing `/wanderverse add [your line]`"
         else:
             response["text"] = "No poems to show. To start a new one, type `/wanderverse new`"
     elif command[0:3] == "add":
@@ -73,17 +78,39 @@ def slash_command(request):
             newfile = str(datetime.today()) + ".txt"
             with open(newfile, "a+") as f:
                 f.write(command[4:])
+        if settings.SLACK_ANNOUNCE:
+            client.chat_postMessage(
+                channel=settings.SLACK_CHANNEL,
+                text="A new line has been added to the latest poem. Type `/wanderverse show` to get a peek.")
         response["text"] = "added your line. Thank you for playing!"
     elif command[0:3] == "new":
         newfile = os.path.join(settings.SLACK_STORAGE, str(datetime.today()) + ".txt")
         newfileobj = open(newfile, "w+")
         response["text"] = "Created a new poem. Type `/wanderverse add` followed by your line"
+        if settings.SLACK_ANNOUNCE:
+            client.chat_postMessage(
+                channel=settings.SLACK_CHANNEL,
+                text="A new exquisite game is afoot! Join by typing `/wanderverse list` to see available commands")
+
     elif command == "unravel":
         if latest_file:
             with open(latest_file, "r") as f:
-                response["text"] = f.read()
+                response["text"] = "--------------------------\n"
+                response["text"] += f.read()
+                response["text"] += "\n\n--------------------------"
         else:
             response["text"] = "No poems to show. To start a new one, type `/wanderverse new`"
     elif command == "get instructions":
         response["text"] = helpers.get_instructions()
+        if latest_file:
+            with open(latest_file, "r") as f:
+                lines = f.readlines()
+            if len(lines):
+                response["text"] += "\n\n*This is the last line* (the rest will remain hidden until you unravel):\n\n\n"
+                response["text"] += "--------------------------\n\n"
+                response["text"] += lines[-1]
+                response["text"] += "\n\n--------------------------"
+    else:
+        response[
+            "text"] = "Uh oh! I didn't understand that command. Type `/wanderverse list` to see available commands."
     return JsonResponse(response, safe=False)
