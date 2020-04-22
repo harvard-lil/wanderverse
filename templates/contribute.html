@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    {{ poem.title }}
+</h1>
+{% for verse in previews %}
+    <p>
+        {{ verse }}
+    </p>
+{% endfor %}
+<form method="post" action="{% url 'add_line' poem.id %}">
+    {% csrf_token %}
+    <label>
+        Your Line <input type="text" name="verse"> (required)
+    </label>
+    <fieldset>
+        <input type="hidden" name="metadata_key_1" value="where">
+        <label>
+            Where'd you get it? <input type="text" name="metadata_value_1">
+        </label>
+    </fieldset>
+    Other Metadata:
+    <fieldset>
+        <label>
+           Name: <input type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
+        </label>
+        <label>
+           Value: <input type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+           Name: <input type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
+        </label>
+        <label>
+           Value: <input type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+           Name: <input type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
+        </label>
+        <label>
+           Value: <input type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
+        </label>
+    </fieldset>
+    <input type="submit">
+</form>
+</body>
+</html>

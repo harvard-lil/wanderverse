@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    {{ poem.title }}
+</h1>
+{% for verse in poem.poem_verses.all %}
+    <p>
+        {{ verse.text }}
+    </p>
+{% endfor %}
+<a href="{% url "contribute" poem.id %}">Contribute a line to this poem</a> (obviously this is just for testing because
+they wouldn't be able to see the whole poem unless it was unraveled.)
+</body>
+</html>
