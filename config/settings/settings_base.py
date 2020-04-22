@@ -152,6 +152,9 @@ PIPELINE = {
 
 AUTH_USER_MODEL = 'app.SiteUser'
 
+# how many hours do poems stay locked?
+LOCK_TIME_LIMIT = 2
+
 
 # slack
 SLACK_STORAGE = os.path.join(BASE_DIR, '../slackbot/storage')

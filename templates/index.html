@@ -1,15 +1,8 @@
-{% load static %}{% load pipeline %}
-<!DOCTYPE html>
-<head>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% stylesheet 'base' %}
-</head>
-<body>
+{% load static %}
 <h1><img src="{% static "img/title.svg" %}" alt="The Wanderverse Project"></h1>
 
 <h5>A collaborative, book-based poetry project</h5>
 
 <button>Get your poem</button>
-</body>
-</html>
+<a href="{% url 'read_random' %}">Read a random unravelled poem</a>
+<a href="{% url 'contribute_random' %}">Contribute to a random poem</a>
