@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from app import views
 urlpatterns = [
+    path('', views.index, name="home"),
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('verse/', views.verse),
-    path('slack/',  include('slackbot.urls')),
+    path('poem/<int:poem_id>/', views.read_poem, name="read"),
+    path('poem/', views.read_poem, name="read_random"),
+    path('add_line/<int:poem_id>/', views.add_line, name="add_line"),
+    path('contribute/<int:poem_id>/', views.contribute, name="contribute"),
+    path('contribute/', views.contribute, name="contribute_random"),
+    path('slack/',  include('slackbot.urls'), name="slack"),
 ]

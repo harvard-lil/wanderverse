@@ -5,12 +5,7 @@ from .models import *
 class CountryAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Book)
-class BookAdmin(admin.ModelAdmin):
-    #title = forms.CharField(widget=forms.Textarea)
-    pass
-
-@admin.register(Line)
+@admin.register(Verse)
 class LineAdmin(admin.ModelAdmin):
     pass
 
