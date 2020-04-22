@@ -1,8 +1,21 @@
-{% load static %}
-<h1><img src="{% static "img/title.svg" %}" alt="The Wanderverse Project"></h1>
+{% load static %}{% load pipeline %}
+<!DOCTYPE html>
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% stylesheet 'base' %}
+</head>
+<body>
+    <h1><img src="{% static "img/title.svg" %}" alt="The Wanderverse Project"></h1>
 
-<h5>A collaborative, book-based poetry project</h5>
-
-<button>Get your poem</button>
-<a href="{% url 'read_random' %}">Read a random unravelled poem</a>
-<a href="{% url 'contribute_random' %}">Contribute to a random poem</a>
+    <h5>A collaborative, book-based poetry project</h5>
+    <div class="container is-widescreen">
+        <div class="notification">
+            This container is <strong>fullwidth</strong> <em>until</em> the <code>$widescreen</code> breakpoint.
+        </div>
+    </div>
+    <button>Get your poem</button>
+    <a href="{% url 'read_random' %}">Read a random unravelled poem</a>
+    <a href="{% url 'contribute_random' %}">Contribute to a random poem</a>
+</body>
+</html>
