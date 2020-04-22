@@ -1,6 +1,15 @@
-{% load static %}
+{% load static %}{% load pipeline %}
+<!DOCTYPE html>
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% stylesheet 'base' %}
+</head>
+<body>
 <h1><img src="{% static "img/title.svg" %}" alt="The Wanderverse Project"></h1>
 
 <h5>A collaborative, book-based poetry project</h5>
 
 <button>Get your poem</button>
+</body>
+</html>

@@ -3,3 +3,6 @@
 
 config/settings/settings.py
 slackbot/storage
+
+node_modules
+staticfiles

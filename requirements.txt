@@ -9,13 +9,16 @@ async-timeout==3.0.1      # via aiohttp
 attrs==19.3.0             # via aiohttp
 chardet==3.0.4            # via aiohttp
 click==7.1.1              # via pip-tools
+django-pipeline==1.7.0    # via -r requirements.in, libsasscompiler
 django==2.2.11            # via -r requirements.in
 idna==2.9                 # via yarl
+libsass==0.19.4           # via libsasscompiler
+libsasscompiler==0.1.5    # via -r requirements.in
 multidict==4.7.5          # via aiohttp, yarl
 pip-tools==4.5.1          # via -r requirements.in
 psycopg2==2.8.4           # via -r requirements.in
 pytz==2019.3              # via django
-six==1.14.0               # via pip-tools
+six==1.14.0               # via libsass, pip-tools
 slackclient==2.5.0        # via -r requirements.in
 sqlparse==0.3.1           # via django
 yarl==1.4.2               # via aiohttp
