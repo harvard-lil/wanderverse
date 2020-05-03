@@ -1,4 +1,3 @@
-
 // from https://bulma.io/documentation/components/navbar/
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,4 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  let $target = document.getElementById("navbar-one-line")
+  $target.style.display = "none";
+  let topOfOthDiv = 380;
+  document.addEventListener('scroll', () => {
+    if (window.scrollY > topOfOthDiv) {
+      $target.style.display = "block";
+    } else {
+      $target.style.display = "none";
+    }
+  })
 });
+
