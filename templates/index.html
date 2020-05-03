@@ -1,8 +1,84 @@
-{% load static %}
-<h1><img src="{% static "img/title.svg" %}" alt="The Wanderverse Project"></h1>
+{% load static %}{% load pipeline %}
 
-<h5>A collaborative, book-based poetry project</h5>
+<!DOCTYPE html>
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% stylesheet 'base' %}
+    {% javascript 'base' %}
+</head>
+<body>
+{% include "includes/nav.html" %}
 
-<button>Get your poem</button>
-<a href="{% url 'read_random' %}">Read a random unravelled poem</a>
-<a href="{% url 'contribute_random' %}">Contribute to a random poem</a>
+
+<div class="container main-container">
+    <section class="hero has-text-centered">
+        <div class="hero-body">
+            <div class="container">
+                <h1>
+                    <img src="{% static "img/title.svg" %}" alt="The Wanderverse Project">
+                </h1>
+                <div class="columns is-centered is-mobile">
+                    <div class="column is-three-fifths-mobile  is-three-fifths-tablet is-one-quarter-desktop subtitle-container">
+                        <h2 class="subtitle">
+                            A collaborative, book-based poetry project
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="has-text-centered columns">
+        <div class="column is-three-fifths-mobile">
+
+            <a class="button is-primary" href="{% url 'contribute_random' %}">WRITE NOW!</a>
+        </div>
+        <div class="column is-three-fifths-mobile">
+            <a class="button is-primary" href="{% url 'read_random' %}">READ POEM</a>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="columns is-mobile is-centered">
+            <div class="column is-three-fifths">
+
+                <h4>About</h4>
+                <p>
+                    This is the Wanderverse Project. We hope you enjoy it. There are two ways to interact with the game:
+                    as a viewer and as a contributor.
+                </p>
+                <p>
+                    Wanderverses are created when people all across the internet contribute to a poem using words found
+                    around their own space. It’s a little like an Exquisite Corpse game.
+                    The game is simple. At the beginning of your turn you’ll see the last two lines from a poem that is
+                    in
+                    play.
+                    Participating means adding your own line to the poem. Adding your own line to the poem means finding
+                    a
+                    phrase from around your living space that you think speaks to the previous two lines. Don’t worry -
+                    we’ll give you some guidance. Guidance will be found once you press “Contribute” above.
+                </p>
+                Let your specific prompt pull you around your house, and select a book, or a DVD cover, or a magazine or
+                anything that jumps out to you. The words you select will meld back into the poem you started with. The
+                next
+                person to contribute will see it as part of a new set, also two lines.
+
+                And so on and so on - it’s a chain created over time. You can see all of the poems in their full form by
+                clicking “Read Poems” above.
+
+                Don’t worry about the perfect fit! Don’t worry about changing directions! Bring your voice to the table.
+
+                Note: This project was created at the Library Innovation Lab in partnership with the Somerville Public
+                Library in Somerville, Massachusetts. It was conceived as a tool for exploring the collection of your
+                local
+                library, to bring a little serendipity into your visit. Now, as most of us spend our days in spaces that
+                leave nothing physical to explore, we see it as an opportunity to dive into language and stories we
+                already
+                have around us - and to connect them with others around the web.
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
