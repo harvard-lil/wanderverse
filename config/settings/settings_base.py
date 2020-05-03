@@ -147,6 +147,14 @@ PIPELINE = {
             ),
             'output_filename': 'base.css'
         },
+    },
+    'JAVASCRIPT': {
+        'base': {
+            'source_filenames': (
+                'js/nav.js',
+            ),
+            'output_filename': 'base.js'
+        },
     }
 }
 
