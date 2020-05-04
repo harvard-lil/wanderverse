@@ -9,6 +9,14 @@
 @import 'fonts';
 @import 'elements';
 
+::selection {
+  background: $color-pink-light; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: $color-pink-light; /* Gecko Browsers */
+}
+
 body {
   font-family: $family-sans-serif !important;
   background: $color-cream;
@@ -22,16 +30,41 @@ body {
 
 .navbar {
   border-bottom: 1px solid $color-gray-light;
-
+  margin: 0 auto;
+  max-width: $desktop;
+  padding-right: 20px;
+  @include from($desktop) {
+    border-left: 1px solid $color-gray-light;
+    border-right: 1px solid $color-gray-light;
+  }
+  @include until($tablet) {
+    background-color: $color-cream;
+  }
   .navbar-item {
     font-weight: $font-weight-bold;
     text-transform: uppercase;
+    border-bottom: 0;
+    padding-bottom: 0;
+    &:hover, &:active, &:focus {
+      color: $color-blue;
+      background-color: $color-pink-light;
+    }
+  }
+  #navbar-one-line {
+    display: none;
+  }
+  .navbar-menu.is-active {
+    #navbar-one-line {
+      display: block;
+    }
   }
 }
 
 .main-container {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 4.35em;
   background-color: $color-white;
+  max-width: $desktop;
   @include from($desktop) {
     border-left: 1px solid $color-gray-light;
     border-right: 1px solid $color-gray-light;
@@ -44,15 +77,15 @@ body {
 .hero-body {
   .subtitle-container {
     color: $color-gray-light;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     position: relative;
     z-index: 10;
     border-top: 2px solid $color-gray-light;
     border-bottom: 2px solid $color-gray-light;
     padding: 1.3em;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-bottom: 2em;
-
+    // just some double border ridiculousness
     &:before {
       content: "";
       display: block;
@@ -65,5 +98,14 @@ body {
       border-top: 2px solid $color-gray-light;
       border-bottom: 2px solid $color-gray-light;
     }
+  }
+}
+
+.about-section {
+  padding-top: 3em;
+
+  hr {
+    margin-bottom: 3em;
+    background-color: $color-gray-light;
   }
 }

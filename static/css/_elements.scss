@@ -1,6 +1,31 @@
+a {
+  transition: 0.2s;
+  &.primary-link {
+    color: $color-blue;
+    border-bottom: 1px solid $color-blue;
+
+    &:hover, &:active, &:focus {
+      background-color: $color-pink-light;
+      border-bottom: 0;
+      color: $color-blue;
+      padding-bottom: 0.2em;
+    }
+  }
+
+  &.button {
+    border-bottom: 0;
+    text-transform: uppercase;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   color: $color-gray-medium;
   font-weight: $font-weight-bold;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 .button {
@@ -8,10 +33,12 @@ h1, h2, h3, h4, h5 {
   border-radius: 0;
   font-weight: $font-weight-bold;
   padding: 1.5em;
+
   &.is-primary {
     background-color: $color-pink;
     color: $color-blue;
     font-family: $font-weight-extrabold;
+
     &:hover, &:active {
       background-color: $color-blue;
       color: $color-pink

@@ -1,15 +1,21 @@
 {% load static %}{% load pipeline %}
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item">
+        <a class="navbar-item" id="navbar-one-line">
             <img src="{% static "img/title-one-line.svg" %}" width="300">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+           data-target="navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
         </a>
     </div>
 
     <div id="navbar" class="navbar-menu">
         <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item" href="{% url 'contribute_random' %}">
                 Write
             </a>
             <a class="navbar-item">

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% block content %}
 <h1>
     {{ poem.title }}
 </h1>
@@ -27,29 +21,28 @@
     Other Metadata:
     <fieldset>
         <label>
-           Name: <input type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
+            Name: <input type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
         </label>
         <label>
-           Value: <input type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
-        </label>
-    </fieldset>
-    <fieldset>
-        <label>
-           Name: <input type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
-        </label>
-        <label>
-           Value: <input type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+            Value: <input type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
         </label>
     </fieldset>
     <fieldset>
         <label>
-           Name: <input type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
+            Name: <input type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
         </label>
         <label>
-           Value: <input type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
+            Value: <input type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+            Name: <input type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
+        </label>
+        <label>
+            Value: <input type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
         </label>
     </fieldset>
     <input type="submit">
 </form>
-</body>
-</html>
+{% endblock %}

@@ -1,6 +1,8 @@
 {% load static %}{% load pipeline %}
 
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,75 +10,89 @@
     {% javascript 'base' %}
 </head>
 <body>
-{% include "includes/nav.html" %}
-
-
-<div class="container main-container">
+<div class="container main-container is-desktop">
+    {% include "includes/nav.html" %}
+    {% block content %}
     <section class="hero has-text-centered">
         <div class="hero-body">
             <div class="container">
                 <h1>
-                    <img src="{% static "img/title.svg" %}" alt="The Wanderverse Project">
+                    <img src="{% static "img/title.svg" %}" width="450" alt="The Wanderverse Project">
                 </h1>
                 <div class="columns is-centered is-mobile">
-                    <div class="column is-three-fifths-mobile  is-three-fifths-tablet is-one-quarter-desktop subtitle-container">
-                        <h2 class="subtitle">
+                    <div class="column is-three-fifths-mobile is-two-fifths-tablet is-one-third-desktop subtitle-container">
+                        <div class="subtitle">
                             A collaborative, book-based poetry project
-                        </h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="has-text-centered columns">
-        <div class="column is-three-fifths-mobile">
-
-            <a class="button is-primary" href="{% url 'contribute_random' %}">WRITE NOW!</a>
-        </div>
-        <div class="column is-three-fifths-mobile">
-            <a class="button is-primary" href="{% url 'read_random' %}">READ POEM</a>
-        </div>
+    <section class="has-text-centered">
+        <a class="button is-primary"
+           href="{% url 'contribute_random' %}">
+            WRITE NOW!</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a class="button is-primary"
+           href="{% url 'read_random' %}">READ POEM</a>
     </section>
     <section class="about-section">
         <div class="columns is-mobile is-centered">
-            <div class="column is-three-fifths">
-
+            <div class="column is-half-tablet is-three-fifths-mobile">
                 <h4>About</h4>
+                <hr>
                 <p>
                     This is the Wanderverse Project. We hope you enjoy it. There are two ways to interact with the game:
                     as a viewer and as a contributor.
                 </p>
                 <p>
                     Wanderverses are created when people all across the internet contribute to a poem using words found
-                    around their own space. It’s a little like an Exquisite Corpse game.
-                    The game is simple. At the beginning of your turn you’ll see the last two lines from a poem that is
-                    in
-                    play.
-                    Participating means adding your own line to the poem. Adding your own line to the poem means finding
-                    a
-                    phrase from around your living space that you think speaks to the previous two lines. Don’t worry -
-                    we’ll give you some guidance. Guidance will be found once you press “Contribute” above.
+                    around their own space. It’s a little like an <a target="_blank" class="primary-link"
+                                                                     href="https://www.moma.org/collection/terms/138">Exquisite
+                    Corpse</a> game.
                 </p>
-                Let your specific prompt pull you around your house, and select a book, or a DVD cover, or a magazine or
-                anything that jumps out to you. The words you select will meld back into the poem you started with. The
-                next
-                person to contribute will see it as part of a new set, also two lines.
-
-                And so on and so on - it’s a chain created over time. You can see all of the poems in their full form by
-                clicking “Read Poems” above.
-
-                Don’t worry about the perfect fit! Don’t worry about changing directions! Bring your voice to the table.
-
-                Note: This project was created at the Library Innovation Lab in partnership with the Somerville Public
-                Library in Somerville, Massachusetts. It was conceived as a tool for exploring the collection of your
-                local
-                library, to bring a little serendipity into your visit. Now, as most of us spend our days in spaces that
-                leave nothing physical to explore, we see it as an opportunity to dive into language and stories we
-                already
-                have around us - and to connect them with others around the web.
+                <p>
+                    The game is simple. At the beginning of your turn you’ll see the last two lines from a poem that is
+                    in play. Participating means adding your own line to the poem. Adding your own line to the poem
+                    means finding
+                    a phrase from around your living space that you think speaks to the previous two lines. Don’t worry
+                    &mdash; we’ll give you some guidance. Guidance will be found once you press “Contribute” above.
+                </p>
+                <p>
+                    Let your specific prompt pull you around your house, and select a book, or a DVD cover, or a
+                    magazine or
+                    anything that jumps out to you. The words you select will meld back into the poem you started with.
+                    The
+                    next person to contribute will see it as part of a new set, also two lines.
+                </p>
+                <p>
+                    And so on and so on &mdash; it’s a chain created over time. You can see all of the poems in their
+                    full
+                    form by clicking “Read Poems” above.
+                </p>
+                <p>
+                    Don’t worry about the perfect fit! Don’t worry about changing directions! Bring your voice to the
+                    table.
+                </p>
+                <p>
+                    Note: This project was created at the <a target="_blank" class="primary-link"
+                                                             href="https://lil.law.harvard.edu">Library Innovation
+                    Lab</a>
+                    in partnership with the <a target="_blank" class="primary-link"
+                                               href="https://www.somervillepubliclibrary.org/">Somerville Public
+                    Library</a>
+                    in Somerville, Massachusetts. It was conceived as a tool for exploring the collection of
+                    your local library, to bring a little serendipity into your visit. Now, as most of us spend our days
+                    in
+                    spaces that leave nothing physical to explore, we see it as an opportunity to dive into language and
+                    stories we
+                    already have around us - and to connect them with others around the web.
+                </p>
             </div>
         </div>
     </section>
+    {% endblock %}
 
 </div>
 
