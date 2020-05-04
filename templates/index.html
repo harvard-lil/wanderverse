@@ -1,6 +1,8 @@
 {% load static %}{% load pipeline %}
 
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +12,7 @@
 <body>
 <div class="container main-container is-desktop">
     {% include "includes/nav.html" %}
+    {% block content %}
     <section class="hero has-text-centered">
         <div class="hero-body">
             <div class="container">
@@ -17,7 +20,7 @@
                     <img src="{% static "img/title.svg" %}" width="450" alt="The Wanderverse Project">
                 </h1>
                 <div class="columns is-centered is-mobile">
-                    <div class="column is-three-fifths-mobile is-three-fifths-tablet is-one-third-desktop subtitle-container">
+                    <div class="column is-three-fifths-mobile is-two-fifths-tablet is-one-third-desktop subtitle-container">
                         <div class="subtitle">
                             A collaborative, book-based poetry project
                         </div>
@@ -36,7 +39,7 @@
     </section>
     <section class="about-section">
         <div class="columns is-mobile is-centered">
-            <div class="column is-half">
+            <div class="column is-half-tablet is-three-fifths-mobile">
                 <h4>About</h4>
                 <hr>
                 <p>
@@ -89,6 +92,7 @@
             </div>
         </div>
     </section>
+    {% endblock %}
 
 </div>
 
