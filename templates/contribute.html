@@ -23,19 +23,19 @@
                         Add your line
                     </label>
                     <div class="control">
-                        <input class="input" type="text" name="verse" placeholder="Text input"> (required)
+                        <input class="input" type="text" name="verse" required placeholder="Text input"> (required)
                     </div>
                 </div>
                 <fieldset>
                     <input type="hidden" name="metadata_key_1" value="where">
                     <label class="label">
-                        Where'd you find it?
+                        Where did you find it?
                     </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_1">
+                    </div>
                 </fieldset>
-                <div class="control">
-                    <input class="input" type="text" name="metadata_value_1">
-                </div>
-                Other Metadata
+                Other information
                 <fieldset>
                     <label class="label">
                         Name
@@ -47,7 +47,8 @@
                         Value
                     </label>
                     <div class="control">
-                        <input class="input" type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
+                        <input class="input" type="text" name="metadata_value_2"
+                               placeholder="(e.g. 'William Shakespear')">
                     </div>
                 </fieldset>
                 <fieldset>
@@ -61,7 +62,8 @@
                         Value
 
                         <div class="control">
-                            <input class="input" type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+                            <input class="input" type="text" name="metadata_value_3"
+                                   placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
                         </div>
                     </label>
                 </fieldset>
@@ -79,7 +81,8 @@
                         <input class="input" type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
                     </div>
                 </fieldset>
-                <input class="button is-primary" type="submit">
+                <br/>
+                <input class="button is-primary" value="submit" type="submit">
             </form>
         </div>
     </div>

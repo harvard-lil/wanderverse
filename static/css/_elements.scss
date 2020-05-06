@@ -1,5 +1,6 @@
 a {
   transition: 0.2s;
+
   &.primary-link {
     color: $color-blue;
     border-bottom: 1px solid $color-blue;
@@ -32,11 +33,18 @@ p {
   border-radius: 0;
 }
 
+fieldset {
+  margin-bottom: 1em;
+}
+
+button.button, a.button {
+  padding: 1.5em;
+}
+
 .button {
   text-transform: uppercase;
   border-radius: 0;
   font-weight: $font-weight-bold;
-  padding: 1.5em;
 
   &.is-primary {
     background-color: $color-pink;
