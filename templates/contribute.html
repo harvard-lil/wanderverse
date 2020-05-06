@@ -20,45 +20,66 @@
                 {% csrf_token %}
                 <div class="field">
                     <label class="label">
-                        Add your line:
+                        Add your line
                     </label>
                     <div class="control">
-                        <input type="text" name="verse" placeholder="Text input"> (required)
+                        <input class="input" type="text" name="verse" placeholder="Text input"> (required)
                     </div>
                 </div>
                 <fieldset>
                     <input type="hidden" name="metadata_key_1" value="where">
-                    <label>
-                        Where'd you get it? <input type="text" name="metadata_value_1">
+                    <label class="label">
+                        Where'd you find it?
                     </label>
                 </fieldset>
-                Other Metadata:
+                <div class="control">
+                    <input class="input" type="text" name="metadata_value_1">
+                </div>
+                Other Metadata
                 <fieldset>
-                    <label>
-                        Name: <input type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
+                    <label class="label">
+                        Name
                     </label>
-                    <label>
-                        Value: <input type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
+                    </div>
+                    <label class="label">
+                        Value
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label class="label">
+                        Name
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
+                    </div>
+                    <label class="label">
+                        Value
+
+                        <div class="control">
+                            <input class="input" type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+                        </div>
                     </label>
                 </fieldset>
                 <fieldset>
-                    <label>
-                        Name: <input type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
+                    <label class="label">
+                        Name
                     </label>
-                    <label>
-                        Value: <input type="text" name="metadata_value_3"
-                                      placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
+                    </div>
+                    <label class="label">
+                        Value
                     </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <label>
-                        Name: <input type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
-                    </label>
-                    <label>
-                        Value: <input type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
-                    </label>
-                </fieldset>
-                <input type="submit">
+                <input class="button is-primary" type="submit">
             </form>
         </div>
     </div>
