@@ -1,48 +1,89 @@
+{% extends "index.html" %}
 {% block content %}
-<h1>
-    {{ poem.title }}
-</h1>
-{% for verse in previews %}
-    <p>
-        {{ verse }}
-    </p>
-{% endfor %}
-<form method="post" action="{% url 'add_line' poem.id %}">
-    {% csrf_token %}
-    <label>
-        Your Line <input type="text" name="verse"> (required)
-    </label>
-    <fieldset>
-        <input type="hidden" name="metadata_key_1" value="where">
-        <label>
-            Where'd you get it? <input type="text" name="metadata_value_1">
-        </label>
-    </fieldset>
-    Other Metadata:
-    <fieldset>
-        <label>
-            Name: <input type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
-        </label>
-        <label>
-            Value: <input type="text" name="metadata_value_2" placeholder="(e.g. 'William Shakespear')">
-        </label>
-    </fieldset>
-    <fieldset>
-        <label>
-            Name: <input type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
-        </label>
-        <label>
-            Value: <input type="text" name="metadata_value_3" placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
-        </label>
-    </fieldset>
-    <fieldset>
-        <label>
-            Name: <input type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
-        </label>
-        <label>
-            Value: <input type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
-        </label>
-    </fieldset>
-    <input type="submit">
-</form>
+    <div class="columns is-centered is-mobile">
+        <div class="column is-half-tablet is-three-fifths-mobile">
+
+            <h1>
+                {{ poem.title }}
+            </h1>
+            {% for verse in hints %}
+                <p class="verse-hint">
+                    {{ verse }}
+                </p>
+            {% endfor %}
+            {% for verse in previews %}
+                <p class="verse-preview">
+                    {{ verse }}
+                </p>
+            {% endfor %}
+            <form method="post" action="{% url 'add_line' poem.id %}">
+                {% csrf_token %}
+                <div class="field">
+                    <label class="label">
+                        Add your line
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="verse" required placeholder="Text input"> (required)
+                    </div>
+                </div>
+                <fieldset>
+                    <input type="hidden" name="metadata_key_1" value="where">
+                    <label class="label">
+                        Where did you find it?
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_1">
+                    </div>
+                </fieldset>
+                Other information
+                <fieldset>
+                    <label class="label">
+                        Name
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_2" placeholder="(e.g. 'Author')">
+                    </div>
+                    <label class="label">
+                        Value
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_2"
+                               placeholder="(e.g. 'William Shakespear')">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label class="label">
+                        Name
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_3" placeholder="(e.g. 'Object')">
+                    </div>
+                    <label class="label">
+                        Value
+
+                        <div class="control">
+                            <input class="input" type="text" name="metadata_value_3"
+                                   placeholder="(e.g. 'Book', or 'Shampoo Bottle')">
+                        </div>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label class="label">
+                        Name
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_key_4" placeholder="(e.g. 'Color')">
+                    </div>
+                    <label class="label">
+                        Value
+                    </label>
+                    <div class="control">
+                        <input class="input" type="text" name="metadata_value_4" placeholder="(e.g. 'Periwinkle')">
+                    </div>
+                </fieldset>
+                <br/>
+                <input class="button is-primary" value="submit" type="submit">
+            </form>
+        </div>
+    </div>
 {% endblock %}

@@ -21,14 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-  let $target = document.getElementById("navbar-one-line")
+  let $target = document.getElementById("navbar-one-line");
   let topOfOthDiv = 380;
-  document.addEventListener('scroll', () => {
-    if (window.scrollY > topOfOthDiv) {
-      $target.style.display = "block";
-    } else {
-      $target.style.display = "none";
-    }
-  })
+
+  if (window.location.pathname === '/') {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > topOfOthDiv) {
+        $target.style.display = "block";
+      } else {
+        $target.style.display = "none";
+      }
+    })
+  } else {
+    $target.style.display = "block";
+  }
 });
 
