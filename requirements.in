@@ -14,3 +14,6 @@ libsasscompiler
 
 # slack
 slackclient==2.5.0
+
+pytest
+pytest-django      # testing

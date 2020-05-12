@@ -118,6 +118,7 @@ class Poem(models.Model):
         poem_count = Poem.objects.count()
         if not poem_count:
             Poem.objects.create()
+            poem_count = 1
         while tries < 100:
             tries += 1
             try:
