@@ -2,7 +2,6 @@ pip-tools
 
 django
 psycopg2
-django-pipeline
 
 # language tools
 Phyme
@@ -10,6 +9,7 @@ syllables
 profanity_check
 
 # static
+django-pipeline
 libsasscompiler
 
 # slack
