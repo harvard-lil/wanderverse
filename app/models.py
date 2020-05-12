@@ -115,10 +115,13 @@ class Poem(models.Model):
         """ This should be the primary way for a user to get a random poem to contribute to """
         lock_limit = timezone.now() - timedelta(hours=settings.LOCK_TIME_LIMIT)
         tries = 0
+        poem_count = Poem.objects.count()
+        if not poem_count:
+            Poem.objects.create()
         while tries < 100:
             tries += 1
             try:
-                poem = Poem.objects.get(pk=random.choice(range(1, Poem.objects.count() + 1)))
+                poem = Poem.objects.get(pk=random.choice(range(1, poem_count + 1)))
                 if not poem.locked_at or poem.locked_at < lock_limit:
                     return poem
             except ObjectDoesNotExist:
