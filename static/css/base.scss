@@ -32,13 +32,15 @@ body {
   border-bottom: 1px solid $color-gray-light;
   margin: 0 auto;
   max-width: $desktop;
-  padding-right: 20px;
   @include from($desktop) {
     border-left: 1px solid $color-gray-light;
     border-right: 1px solid $color-gray-light;
   }
   @include until($tablet) {
     background-color: $color-cream;
+  }
+  .navbar-brand, .navbar-end{
+    padding-right: 20px;
   }
   .navbar-item {
     font-weight: $font-weight-bold;
@@ -48,6 +50,9 @@ body {
     &:hover, &:active, &:focus {
       color: $color-blue;
       background-color: $color-pink-light;
+    }
+    img {
+      max-height: 1.95em;
     }
   }
   #navbar-one-line {
@@ -80,8 +85,8 @@ body {
     letter-spacing: 0.03em;
     position: relative;
     z-index: 10;
-    border-top: 2px solid $color-gray-light;
-    border-bottom: 2px solid $color-gray-light;
+    border-top: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-light;
     padding: 1.3em;
     margin-top: 3em;
     margin-bottom: 2em;
@@ -95,8 +100,8 @@ body {
       left: 0;
       right: 0;
       bottom: 3px;
-      border-top: 2px solid $color-gray-light;
-      border-bottom: 2px solid $color-gray-light;
+      border-top: 1px solid $color-gray-light;
+      border-bottom: 1px solid $color-gray-light;
     }
   }
 }
