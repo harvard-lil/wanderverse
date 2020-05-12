@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from app.models import Poem
-from django.http import HttpResponseNotAllowed
 
 
 def index(request):
@@ -68,7 +67,6 @@ def add_line(request, poem_id):
         # TODO appopriate response to validation errors
         return redirect('read', poem_id)
 
-
     return redirect('read', poem_id)
 
 
@@ -85,15 +83,17 @@ def contribute(request, poem_id=None):
         return redirect('read', poem_id)
 
     last_two_verse_objects, previous_verse_objects = poem.get_preview_verses()
+    hints = []
     previews = []
     for verse in previous_verse_objects:
-        previews.append("A verse with {} syllables that ends in a word that rhymes with {}".format(
+        hints.append("A verse with {} syllables that ends in a word that rhymes with {}".format(
             verse.syllables, verse.last_word_rhyme))
     for verse in last_two_verse_objects:
         previews.append(verse.text)
 
     return render(request, "contribute.html", {
         "poem": poem,
+        "hints": hints,
         "previews": previews,
         "lock_code": lock_code,
         "status": status
