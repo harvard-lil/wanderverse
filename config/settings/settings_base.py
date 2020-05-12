@@ -130,39 +130,38 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "../static"),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, '../staticfiles')
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'pipeline.finders.PipelineFinder',
 )
 
-PIPELINE = {
-    'COMPILERS': (
-        'libsasscompiler.LibSassCompiler',
-    ),
-    'STYLESHEETS': {
-        'base': {
-            'source_filenames': (
-                'css/base.scss',
-            ),
-            'output_filename': 'base.css'
-        },
+STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
+
+PIPELINE = {'COMPILERS': (
+    'libsasscompiler.LibSassCompiler',
+), 'STYLESHEETS': {
+    'base': {
+        'source_filenames': (
+            'css/base.scss',
+        ),
+        'output_filename': 'css/base.css'
     },
-    'JAVASCRIPT': {
-        'base': {
-            'source_filenames': (
-                'js/nav.js',
-            ),
-            'output_filename': 'base.js'
-        },
-    }
-}
+}, 'JAVASCRIPT': {
+    'base': {
+        'source_filenames': (
+            'js/nav.js',
+        ),
+        'output_filename': 'js/base.js'
+    },
+}, 'CSS_COMPRESSOR': None,
+    'JS_COMPRESSOR': None}
 
 AUTH_USER_MODEL = 'app.SiteUser'
 
 # how many hours do poems stay locked?
 LOCK_TIME_LIMIT = 2
-
 
 # slack
 SLACK_STORAGE = os.path.join(BASE_DIR, '../slackbot/storage')
