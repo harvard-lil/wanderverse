@@ -6,26 +6,36 @@
 #
 aiohttp==3.6.2            # via slackclient
 async-timeout==3.0.1      # via aiohttp
-attrs==19.3.0             # via aiohttp
+attrs==19.3.0             # via aiohttp, pytest
 chardet==3.0.4            # via aiohttp
 click==7.1.1              # via pip-tools
 django-pipeline==1.7.0    # via -r requirements.in, libsasscompiler
 django==2.2.11            # via -r requirements.in
 idna==2.9                 # via yarl
+importlib-metadata==1.6.0  # via pluggy, pytest
 joblib==0.14.1            # via scikit-learn
 libsass==0.19.4           # via libsasscompiler
 libsasscompiler==0.1.5    # via -r requirements.in
+more-itertools==8.2.0     # via pytest
 multidict==4.7.5          # via aiohttp, yarl
 numpy==1.18.3             # via scikit-learn, scipy
+packaging==20.3           # via pytest
 phyme==0.0.9              # via -r requirements.in
 pip-tools==4.5.1          # via -r requirements.in
+pluggy==0.13.1            # via pytest
 profanity-check==1.0.3    # via -r requirements.in
 psycopg2==2.8.4           # via -r requirements.in
+py==1.8.1                 # via pytest
+pyparsing==2.4.7          # via packaging
+pytest-django==3.9.0      # via -r requirements.in
+pytest==5.4.2             # via -r requirements.in, pytest-django
 pytz==2019.3              # via django
 scikit-learn==0.22.2.post1  # via profanity-check
 scipy==1.4.1              # via scikit-learn
-six==1.14.0               # via libsass, pip-tools
+six==1.14.0               # via libsass, packaging, pip-tools
 slackclient==2.5.0        # via -r requirements.in
 sqlparse==0.3.1           # via django
 syllables==0.1.0          # via -r requirements.in
+wcwidth==0.1.9            # via pytest
 yarl==1.4.2               # via aiohttp
+zipp==3.1.0               # via importlib-metadata
