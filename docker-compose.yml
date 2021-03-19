@@ -1,7 +1,7 @@
 version: '3'
 services:
   db:
-    image: postgres:9.6.16
+    image: registry.lil.tools/library/postgres:9.6.16
     volumes:
       - db_data:/var/lib/postgresql/data:delegated
     ports:
@@ -11,7 +11,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/Dockerfile
-    image: wanderverse:0.02
+    image: wanderverse:0.03
     tty: true
     command: bash
     environment:
