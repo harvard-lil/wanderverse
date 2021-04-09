@@ -1,6 +1,6 @@
 pip-tools
 
-django~=2.2.13
+django~=2.2
 psycopg2
 
 # language tools
